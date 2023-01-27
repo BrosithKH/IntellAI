@@ -149,8 +149,40 @@ form img {
   height: 30px;
 }
 
-/* Add a title div on top */
-#title {
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  #app {
+  width: 100%;
+  flex-direction: column;
+  }
+  
+  #chat_container {
+  padding-bottom: 60px;
+  }
+  
+  .chat {
+  flex-direction: column;
+  }
+  
+  .profile {
+  width: 30px;
+  height: 30px;
+  }
+  
+  form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  }
+  
+  textarea {
+  font-size: 16px;
+  }
+  }
+  
+  /* Add a title div on top */
+  #title {
   width: 100%;
   padding: 10px;
   background: #40414f ;
